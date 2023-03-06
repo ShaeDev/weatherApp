@@ -2,6 +2,8 @@
 const express = require('express')
 const bodyParser = require('body-parser')
 const request= require('request')
+const path = required('path')
+
 const app = express()
 
 const apiKey = '57fab7908d9f2206606d70b4bf797a9b'
@@ -24,11 +26,12 @@ app.post('/', function (req,res) {
             res.render('index', {weather:null, error: 'Error, please try again'})
         } else {
             let weather = JSON.parse(body)
+            console.log(weather)
             if (weather.main == undefined){
                 res.render('index', {weather: null, error: 'Error, please try again'})
             } else {
                 let weatherText= `Its's ${weather.main.temp} degrees in ${weather.name}!`;
-                res.render('index', {weather:weatherText, error:null})
+                res.render('index', {weather: weatherText, error:null})
             }
         }
     })
