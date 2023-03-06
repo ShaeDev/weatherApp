@@ -1,0 +1,25 @@
+{
+  "name": "weather-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Shae",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "ejs": "^3.1.8",
+    "err": "^2.1.12",
+    "err-code": "^3.0.1",
+    "express": "^4.18.2",
+    "request": "^2.88.2",
+    "throw": "^1.1.1",
+    "yargs": "^17.7.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.21"
+  }
+}

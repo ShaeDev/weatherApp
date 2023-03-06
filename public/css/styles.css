@@ -1,0 +1,35 @@
+html{
+    background-image: url('https://imgs.search.brave.com/m5WC2qcC_i6wIaQA-yoYWU92JTexoc_U2zyLHH6gTw4/rs:fit:1200:1200:1/g:ce/aHR0cHM6Ly93d3cu/dGFzc2FsLmNvbS5h/dS93cC1jb250ZW50/L3VwbG9hZHMvMjAx/OC8wMi9ibHVlLWJh/Y2tncm91bmQtUE5H/LnBuZw');
+}
+
+body{
+    margin: 50px;
+    font-family:Tahoma;
+    background-color:rgb(79, 143, 159);
+
+    
+
+}
+/* .container{ */
+    /* background-color:rgb(79, 143, 159); */
+/* } */
+
+h1{
+    margin:auto;
+    text-align: center;
+    
+}
+
+form{
+   max-width: 200px;
+   margin: auto;
+   border-radius: 10px;
+   height: 400px;
+   padding-bottom:auto;
+   
+}
+
+.ghost-button{
+    display: inline-block;
+    
+}

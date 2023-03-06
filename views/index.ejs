@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WTWeather App</title>
+    <link rel="stylesheet" type="'text/css" href="/styles.css"> 
+</head>
+<body>
+    <img id="logo" src="https://imgs.search.brave.com/S3MHiUakEXhZ6G58EuVZ20Gr4wznR25Cq-ui4p_8yks/rs:fit:256:256:1/g:ce/aHR0cHM6Ly92aWdu/ZXR0ZS53aWtpYS5u/b2Nvb2tpZS5uZXQv/bG9nb3BlZGlhL2lt/YWdlcy8zLzM5L01z/bl93ZWF0aGVyX25l/dy5wbmcvcmV2aXNp/b24vbGF0ZXN0P2Ni/PTIwMTkwOTAzMTcx/MjI5">
+    <!-- <img id="bg-image" src="https://imgs.search.brave.com/m5WC2qcC_i6wIaQA-yoYWU92JTexoc_U2zyLHH6gTw4/rs:fit:1200:1200:1/g:ce/aHR0cHM6Ly93d3cu/dGFzc2FsLmNvbS5h/dS93cC1jb250ZW50/L3VwbG9hZHMvMjAx/OC8wMi9ibHVlLWJh/Y2tncm91bmQtUE5H/LnBuZw"> -->
+    <h1>Whats The Weather?</h1>
+    <div class="container">
+      <fieldset>
+        <form action="/" method="post">
+          <input name="city" class="ghost-input" type="text" placeholder="Enter a City">  
+          <input type="submit"  class="ghost-button" value="Get Weather">
+        </form>
+        <% if(weather !== null){ %>
+          <p><%= error %></p>
+        <% } %>
+        <% if(error !== null){ %>
+        <% } %>
+      </fieldset>
+    </div>
+</body>
+</html>
